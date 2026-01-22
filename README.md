@@ -26,9 +26,7 @@ pip install torch_geometric
 pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.6.0+cu124.html
 pip install -r requirements.txt
 pip install scipy==1.13.1 numpy==1.26.4
-git clone https://github.com/mosaicml/llm-foundry.git
-cd llm-foundry
-pip install -e ".[gpu]"
+pip install llm-foundry==0.18.0
 cd ..
 ```
 Installation via pip directly is ***coming soon...***
