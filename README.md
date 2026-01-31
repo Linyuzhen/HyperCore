@@ -27,7 +27,6 @@ pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -
 pip install -r requirements.txt
 pip install scipy==1.13.1 numpy==1.26.4
 pip install llm-foundry==0.18.0
-cd ..
 ```
 Installation via pip directly is ***coming soon...***
 
