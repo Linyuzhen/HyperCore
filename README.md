@@ -12,6 +12,7 @@ We provide the core modules and functionalities that makes this process simple f
 
 
 ## Framework Highlights
+
 HyperCore is accessible to experts in hyperbolic deep learning, the more general AI audience, and first-time user of deep learning toolkits alike. Here are some reasons you might want to use HyperCore for building, training, or using foundation models in hyperbolic space!
 
 - **Flexible and Intuitive Foundation Model Support:** HyperCore it is capable of doing much more than reproducing existing models—its components can be effortlessly combined to construct novel hyperbolic foundation models that have yet to be proposed. See [example usage](example_usage) for extensive examples of how to build hyperbolic foundation models with HyperCore!
@@ -19,8 +20,16 @@ HyperCore is accessible to experts in hyperbolic deep learning, the more general
 - **Comprehensive Modules and Model Support:** Unlike anything out there, hyperCore provides a comprehensive and extensive list of essential hyperbolic modules for building a wide range of hyperbolic foundation models for learning across diverse modalities. 
 
 ## Installation
-For now, the dependencies for HyperCore can be installed via 
+
+You can install HyperCore via `pip` or `uv pip`:
+
+```bash
+pip install hypercore
 ```
+
+If you wish to install from scratch, install the following via `pip` or `uv pip`:
+
+```bash
 pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
 pip install torch_geometric
 pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.6.0+cu124.html
@@ -28,10 +37,11 @@ pip install -r requirements.txt
 pip install scipy==1.13.1 numpy==1.26.4
 pip install llm-foundry==0.18.0
 ```
-Installation via pip directly is ***coming soon...***
 
 ## Quick Start: Build Hyperbolic Foundation Models
+
 In this quick start guide, we highlight the ease of creating and training a hyperbolic foundation model model with HyperCore.
+
 ### Creating Your Own Hyperbolic Transformer Encoder Block
 In the first glimpse of HyperCore, we build the encoder block of a hyperbolic Transformer, using hyperbolic-tailored modules such as [LorentzMultiheadAttention](hypercore/nn/attention/lorentz_former_conv.py) for multi-head attention and [LResNet](hypercore/nn/conv/conv_util_layers.py) for residual connection. 
 
