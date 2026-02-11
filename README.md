@@ -24,7 +24,7 @@ HyperCore is accessible to experts in hyperbolic deep learning, the more general
 You can install HyperCore via `pip` or `uv pip`:
 
 ```bash
-pip install hypercore
+pip install hypcore
 ```
 
 If you wish to install from scratch, install the following via `pip` or `uv pip`:
@@ -40,7 +40,12 @@ pip install llm-foundry==0.18.0
 
 ## Quick Start: Build Hyperbolic Foundation Models
 
-In this quick start guide, we highlight the ease of creating and training a hyperbolic foundation model model with HyperCore.
+In this quick start guide, we highlight the ease of creating and training a hyperbolic foundation model model with HyperCore. After installation, import the main package:
+
+```python
+import hypercore
+from hypercore.models import graph_models
+```
 
 ### Creating Your Own Hyperbolic Transformer Encoder Block
 In the first glimpse of HyperCore, we build the encoder block of a hyperbolic Transformer, using hyperbolic-tailored modules such as [LorentzMultiheadAttention](hypercore/nn/attention/lorentz_former_conv.py) for multi-head attention and [LResNet](hypercore/nn/conv/conv_util_layers.py) for residual connection. 

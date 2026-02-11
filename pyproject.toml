@@ -1,0 +1,19 @@
+[project]
+name = "hypcore"
+version = "0.1.0"
+description = "A PyTorch-based framework to build and train hyperbolic deep neural networks and foundation models."
+authors = [
+    { name = "Neil He", email = "neilhe6345@gmail.com" },
+    { name = "Menglin Yang" },
+    { name = "Rex Ying" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+
+[tool.setuptools]
+packages = ["hypercore"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

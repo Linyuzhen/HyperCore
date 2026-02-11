@@ -1,0 +1,4 @@
+include hypercore/**
+include requirements.txt
+include README.md
+include LICENSE
